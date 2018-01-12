@@ -1,0 +1,32 @@
+.form-control{
+	border:0;
+}
+.form-check input[type='checkbox']:after {
+	content: '';
+	background: url(../images/sprite.svg) no-repeat $white;
+	background-size: 800px 600px;
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background-position: -24px -45px;
+}
+.form-check input[type='checkbox']:checked:after {
+	background-position: -3px -45px;
+}
+.form-check input[type='radio']:after {
+	content: '';
+	background: url(../images/sprite.svg) no-repeat $white;
+	background-size: 800px 600px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-position: -68px -44px;
+	border-radius: 50%;
+}
+.form-check input[type='radio']:checked:after {
+	background-position: -46px -45px;
+}
+.form-check label {
+	margin-left:5px;
+}
+

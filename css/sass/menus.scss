@@ -1,0 +1,41 @@
+.main-menu {
+	position:fixed;
+	height: 100%;
+	width: 25%;
+	z-index:2;
+	top: 0;
+	left: 0;
+}
+.main-menu.hidden{
+	width: 70px;
+	overflow-x:hidden;
+}
+.main-menu li{
+	padding: 0.6em 1em;
+}
+.main-menu li .icon{
+	opacity: 0.5;
+}
+.main-menu li.active .icon{
+	opacity: 1;
+}
+.main-menu li.active::before{
+	content: '';
+	width: 8px;
+	height: 100%;
+	background:$dark-purple;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu-bottom{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.sub-menu{
+	display: none;
+}
+.sub-menu li{
+	padding: 0.6em 0 0.6em 2em;
+}
